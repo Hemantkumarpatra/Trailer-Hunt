@@ -22,12 +22,17 @@ const Footer = () => {
                     <li className="menuItem">FAQ</li>
                 </ul>
                 <div className="infoText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                  © 2025 Trailer-Hunt. All rights reserved.
+                   Trailer-Hunt is your ultimate destination 
+                   for discovering, exploring, and watching 
+                   trailers of the latest and most popular
+                    movies and TV shows. Whether you're a 
+                    casual viewer or a dedicated film
+                     enthusiast, we provide a seamless
+                      and immersive experience tailored just
+                       for you. All content presented on this
+                        platform is for informational and
+                         entertainment purposes only. Movie posters, trailers, and metadata belong to their respective owners and are used under fair use guidelines. For inquiries, suggestions, or feedback, please visit our FAQ section or contact our support team. Stay tuned, stay entertained — only on Trailer-Hunt.
                 </div>
                 <div className="socialIcons">
                     <span className="icon">

@@ -7,7 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/movix-logo.svg";
+import logo from "../../assets/trailerhunt-logo.png"; // ✅ use your new logo here
 
 const Header = () => {
     const [show, setShow] = useState("top");
@@ -75,20 +75,11 @@ const Header = () => {
             <ContentWrapper>
                 <div className="logo" onClick={() => navigate("/")}>
                     <img src={logo} alt="" />
+                    <span style={{ fontWeight: 700, fontSize: "1.2rem", marginLeft: "0.5rem" }}>Trailer-Hunt</span>
                 </div>
                 <ul className="menuItems">
-                    <li
-                        className="menuItem"
-                        onClick={() => navigationHandler("movie")}
-                    >
-                        Movies
-                    </li>
-                    <li
-                        className="menuItem"
-                        onClick={() => navigationHandler("tv")}
-                    >
-                        TV Shows
-                    </li>
+                    <li className="menuItem" onClick={() => navigationHandler("movie")}>Movies</li>
+                    <li className="menuItem" onClick={() => navigationHandler("tv")}>TV Shows</li>
                     <li className="menuItem">
                         <HiOutlineSearch onClick={openSearch} />
                     </li>
@@ -103,19 +94,18 @@ const Header = () => {
                     )}
                 </div>
             </ContentWrapper>
+
             {showSearch && (
                 <div className="searchBar">
                     <ContentWrapper>
                         <div className="searchInput">
                             <input
                                 type="text"
-                                placeholder="Search for a movie or tv show...."
+                                placeholder="Search for a movie or TV show..."
                                 onChange={(e) => setQuery(e.target.value)}
                                 onKeyUp={searchQueryHandler}
                             />
-                            <VscChromeClose
-                                onClick={() => setShowSearch(false)}
-                            />
+                            <VscChromeClose onClick={() => setShowSearch(false)} />
                         </div>
                     </ContentWrapper>
                 </div>
